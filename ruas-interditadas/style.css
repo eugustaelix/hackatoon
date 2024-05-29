@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Campora;
+    src: url("../camporaclassic.ttf");
+}
+
+
+#pagina-inicio {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body {
+    background: radial-gradient(circle,
+            rgba(152, 236, 255, 1) 0%,
+            rgba(2, 202, 246, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Campora;
+    background-attachment: fixed;
+}
+
+i {
+    color: #02caf6;
+}
+
+.infclima {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: absolute;
+    width: 83%;
+    height: 12%;
+    top: 269px;
+    background: linear-gradient(180deg,
+            rgba(239, 252, 255, 1) 1%,
+            rgba(153, 242, 255, 1) 100%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 27px;
+    border-bottom-left-radius: 27px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.container2 {
+    border-radius: 27px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    width: 83%;
+    height: 43%;
+    top: 390px;
+    background: rgba(211, 205, 255, 0.5);
+    background: linear-gradient(180deg,
+            rgba(185, 246, 255, 1) 1%,
+            rgba(153, 242, 255, 1) 100%);
+    transition: 0.5s;
+}
+
+.clima {
+    position: absolute;
+    z-index: 999;
+    width: 210px;
+    height: 150px;
+    top: 110px;
+}
+
+.col {
+    flex: 1;
+}
+
+.col.pequeno {
+    flex: 2;
+    margin: 15px;
+}
+
+.col.grande {
+    flex: 6;
+}
+
+.navbar {
+    height: 7%;
+    background: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    color: #0c1b3b;
+}
+
+.iconenavbar {
+    font-size: 40px;
+    margin: 30px;
+    width: 45px;
+    height: 45px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+img {
+    transition: 0.5s;
+}
+
+img:hover {
+    filter: brightness(110%);
+    transition: 0.5s;
+}
+
+.infclima:hover {
+    filter: brightness(105%);
+    transition: 0.5s;
+}
+
+.container2:hover {
+    filter: brightness(105%);
+    transition: 0.5s;
+}
+
+.informacoes {
+    display: contents;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body id="pagina-inicio">
+  <label class="cidade" id="city">Mongaguá - SP</label>
+  <img src="" class="clima" id="weather-icon" />
+  <div class="fundo"></div>
+  <div class="informacoes">
+    <div class="infclima" id="weather-data">
+      <div class="col pequeno" style="text-align: center; line-height: 1">
+        <label style="font-weight: bold; font-size: xxx-large" id="temperature"><span></span>&deg;</label>
+        <br />
+        <label id="description"></label>
+      </div>
+      <div class="col pequeno" style="line-height: 1.6; font-size: larger">
+        <label>Vento</label>
+        <br />
+        <label style="font-weight: bold" id="wind"></label>
+      </div>
+      <div class="col pequeno" style="line-height: 1.6; font-size: larger">
+        <label>Umidade</label>
+        <br />
+        <label style="font-weight: bold" id="umidity"></label>
+      </div>
+    </div>
+  </div>
+  <div class="alertas">
+    <div class="col pequeno" style="text-align: center; line-height: 1.5">
+      <label style="font-size: x-large"><i class="fa fa-exclamation-circle vermelho"></i>&nbsp;Rua Santos está
+        alagada!</label>
+      <br />
+      <label style="font-size: x-large"><i class="fa fa-exclamation-circle vermelho"></i>&nbsp;Av. Antônio Francisco
+        Cegarra está interditada!</label>
+      <br />
+      <label style="font-size: x-large"><i class="fa fa-exclamation-circle vermelho"></i>&nbsp;Av. Monteiro Lobato está
+        interditada!</label>
+      <br />
+      <label style="font-size: x-large"><i class="fa fa-exclamation-circle vermelho"></i>&nbsp;Rua Aimorés está
+        alagada!</label>
+    </div>
+  </div>
+  <div class="navbar">
+    <img src="../inicio.png" class="iconenavbar" onclick="window.location.href='index.html'" />
+    <img src="../ruainterditada.png" class="iconenavbar"
+      onclick="window.location.href='../ruas-interditadas/ruasinterditadas.html'" />
+    <img src="../blog.png" class="iconenavbar" />
+    <img src="../conta.png" class="iconenavbar" />
+  </div>
+</body>
+
+</html>
